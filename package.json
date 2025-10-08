@@ -11,7 +11,9 @@
     "build": "cd client && npm run build",
     "start": "cd server && npm start",
     "build:production": "cd client && npm run build",
-    "deploy:render": "npm run build:production"
+    "deploy:render": "npm run build:production",
+    "deploy:railway": "npm run build:production",
+    "deploy": "npm run build:production"
   },
   "keywords": [
     "appointment",
