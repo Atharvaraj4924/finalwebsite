@@ -1,0 +1,42 @@
+# Hostinger Deployment Instructions
+
+## 📁 Upload These Folders to Hostinger:
+
+### 1. Frontend (public_html folder contents)
+Upload everything from the 'public_html' folder to your domain's public_html directory in Hostinger.
+
+### 2. Backend (server folder)
+Upload the entire 'server' folder to your hosting account.
+
+## ⚙️ Configuration Steps:
+
+1. **Update .env file** in the server folder with your actual values:
+   - MongoDB Atlas connection string
+   - Strong JWT secret
+   - Your domain name
+
+2. **In Hostinger Control Panel:**
+   - Go to Node.js section
+   - Create new Node.js application
+   - Set path to /server
+   - Set startup file to server.js
+   - Install dependencies: npm install
+   - Start the application
+
+3. **Test your website:**
+   - Visit https://drdesaipalus.com
+   - Test API: https://drdesaipalus.com/api/health
+
+## 🔒 Security Reminders:
+- Use strong JWT secret (32+ characters)
+- Update MongoDB Atlas IP whitelist
+- Enable HTTPS
+- Set proper CORS origins
+
+## 📞 If you need help:
+- Check Hostinger Node.js logs
+- Verify environment variables
+- Test MongoDB connection
+- Check browser console for errors
+
+Good luck with your deployment! 🎉
